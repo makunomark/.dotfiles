@@ -110,6 +110,8 @@ export DOTFILES_PATH=~/Workspace/.dotfiles
 # Load local environment variables
 [[ -f "$DOTFILES_PATH/zsh/local_env.zsh" ]] && source "$DOTFILES_PATH/zsh/local_env.zsh"
 
+# Set homebrew path
+export PATH=$PATH:/opt/homebrew/bin
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
