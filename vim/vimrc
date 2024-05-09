@@ -1,0 +1,11 @@
+" enable line numbers
+set number
+
+" enable status bar
+set laststatus=2
+
+" enable wrapping
+set wrap
+
+" enable syntax highlighting
+syntax on
