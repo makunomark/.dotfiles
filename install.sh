@@ -3,5 +3,7 @@ if [ -z "$DOTFILES_PATH" ]; then
   exit 1
 fi
 
+# Vim configuration
+rm ~/.vimrc
 ln -sv "$DOTFILES_PATH/vim/vimrc" ~/.vimrc
 
