@@ -14,6 +14,10 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 git clone https://github.com/marlonrichert/zsh-autocomplete.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autocomplete
 echo "Oh-my-zsh Plugins: Install complete"
 
+# Symlink zsh config
+rm ~/.zshrc
+ln -sv "$DOTFILES_PATH/zsh/zshrc" ~/.zshrc
+
 # Install nvm
 echo "Node version manager: Installing..."
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
