@@ -12,7 +12,9 @@ export ZSH="$HOME/.oh-my-zsh"
 # ZSH_THEME="awesomepanda"
 # ZSH_THEME="lukerandall"
 # ZSH_THEME="agnoster"
-ZSH_THEME="robbyrussell"
+# ZSH_THEME="robbyrussell"
+# ZSH_THEME="obraun"
+ZSH_THEME="afowler"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -110,9 +112,12 @@ export DOTFILES_PATH=~/Workspace/.dotfiles
 # Load local environment variables
 [[ -f "$DOTFILES_PATH/zsh/local_env.zsh" ]] && source "$DOTFILES_PATH/zsh/local_env.zsh"
 
-# Set homebrew path
-export PATH=$PATH:/opt/homebrew/bin
-
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+export PATH="${HOME}/.azureauth/0.8.6:${PATH}"
+
+# Add Android SDK platform tools to PATH
+export PATH="${PATH}:${HOME}/Library/Android/sdk/platform-tools"
+export PATH="/opt/homebrew/bin:$PATH"
